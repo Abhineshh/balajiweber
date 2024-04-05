@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 
 
 function Navbar() {
@@ -17,11 +18,11 @@ function Navbar() {
                         </div>
                         {/* Primary Navbar items */}
                         <div className="hidden md:flex items-center space-x-1">
-                            <a href="/" className="py-3 px-3 hover:bg-blue-600">Home</a>
-                            <a href="/Projects" className="py-3 px-3 hover:bg-blue-600">Projects</a>
+                            <Link to="/" className="py-3 px-3 hover:bg-blue-600">Home</Link>
+                            <Link to="/Projects" className="py-3 px-3 hover:bg-blue-600">Projects</Link>
 
-                            <a href="/Blog" className="py-3 px-3 hover:bg-blue-500">Blogs</a>
-                            <a href="/Contact" className="py-3 px-3 hover:bg-blue-500">Contact</a>
+                            <Link to="/Blog" className="py-3 px-3 hover:bg-blue-500">Blogs</Link>
+                            <Link to="/Contact" className="py-3 px-3 hover:bg-blue-500">Contact</Link>
                         </div>
                     </div>
                     {/* Mobile menu button */}
@@ -34,11 +35,11 @@ function Navbar() {
             </div>
             {/* Mobile Menu */}
             <div className={`${hamburger ? 'absolute' : 'hidden'} md:hidden min-w-full bg-stone-900 text-center`}>
-                <a href="/" className="block py-2 px-4 text-md text-center active:bg-blue-400 hover:bg-stone-500">Home</a>
-                <a href="/Projects" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Projects</a>
-                <a href="/Youtube" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Youtube</a>
-                <a href="/Contact" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Contact</a>
-                <a href="/Blog" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Blogs</a>
+                <Link to="/" className="block py-2 px-4 text-md text-center active:bg-blue-400 hover:bg-stone-500">Home</Link>
+                <Link to="/Projects" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Projects</Link>
+                <Link to="/Youtube" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Youtube</Link>
+                <Link to="/Contact" className="block py-2 px-4 text-md  text-center active:bg-stone-400 hover:bg-stone-500">Contact</Link>
+                <Link to="/Blog" className="block py-2 px-4 text-md text-center active:bg-stone-400 hover:bg-stone-500">Blogs</Link>
 
             </div>
 
