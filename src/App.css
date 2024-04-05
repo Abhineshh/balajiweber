@@ -1,0 +1,12 @@
+@keyframes rotate720 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(720deg);
+  }
+}
+
+.rotate-720 {
+  animation: rotate720 1s ease-in-out forwards;
+}
